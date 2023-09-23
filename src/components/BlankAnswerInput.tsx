@@ -3,11 +3,12 @@ import keyword_extractor from "keyword-extractor";
 
 type Props = {
 	answer: string;
+	setBlankAnswer: React.Dispatch<React.SetStateAction<string>>;
 };
 
 const blank = "_____";
 
-const BlankAnswerInput = ({ answer }: Props) => {
+const BlankAnswerInput = ({ answer, setBlankAnswer }: Props) => {
 	const keywords = React.useMemo(() => {
 		const words = keyword_extractor.extract(answer, {
 			language: "english",
@@ -23,8 +24,9 @@ const BlankAnswerInput = ({ answer }: Props) => {
 		const answerWithBlanks = keywords.reduce((acc, curr) => {
 			return acc.replace(curr, blank);
 		}, answer);
+		setBlankAnswer(answerWithBlanks);
 		return answerWithBlanks;
-	}, [keywords, answer]);
+	}, [keywords, answer, setBlankAnswer]);
 
 	return (
 		<div className="flex justify-start w-full mt-4">
