@@ -36,7 +36,7 @@ export const POST = async (req: Request, res: Response) => {
 			questions = await strict_output(
 				"You are a helpful AI that is able to generate multiple choice questions and anwers, the length of answers should not exceed 15 words",
 				new Array(amount).fill(
-					`You are to generate a random hard open-ended question about  ${topic}`
+					`You are to generate a random hard multiple choice-question about  ${topic}`
 				),
 				{
 					question: "question",

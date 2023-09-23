@@ -79,6 +79,13 @@ export async function strict_output(
 
 		let res: string =
 			response.choices[0].message?.content?.replace(/'/g, '"') ?? "";
+
+        // let combinedJsonStr = `[${res.replace(/\}\s*\{/g, "},{")}]`;
+
+        // if (!isValidJSON(combinedJsonStr)) { 
+		// 	console.error("Received malformed JSON:", combinedJsonStr);
+		// 	continue; 
+		// }
             
 		if (!isValidJSON(res)) {
 			console.error("Received malformed JSON:", res);
@@ -99,6 +106,7 @@ export async function strict_output(
 
 		// try-catch block to ensure output format is adhered to
 		try {
+            //let output: any = JSON.parse(combinedJsonStr)
 			let output: any = JSON.parse(res);
 
 			if (list_input) {

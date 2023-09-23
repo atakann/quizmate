@@ -18,6 +18,7 @@
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.4",
     "@tanstack/react-query": "^4.35.3",
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
@@ -26,9 +27,11 @@
     "axios": "^1.5.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "date-fns": "^2.30.0",
     "encoding": "^0.1.13",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "keyword-extractor": "^0.0.27",
     "lucide-react": "^0.279.0",
     "next": "13.4.19",
     "next-auth": "^4.23.1",
@@ -39,6 +42,7 @@
     "react-d3-cloud": "^1.0.6",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.46.1",
+    "string-similarity": "^4.0.4",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
@@ -46,6 +50,7 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@types/string-similarity": "^4.0.0",
     "prisma": "^5.3.1"
   }
 }
