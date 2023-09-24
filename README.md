@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI Quiz Platform
+
+Welcome to the AI Quiz Platform - a robust and dynamic platform built with Next.js 13.4, leveraging OpenAI's LLM API to create an engaging quizzing experience!
+
+## Features
+
+- **Full Stack Next.js 13.4 Application**: Modern, server-side rendered web application.
+- **OpenAI Integration**: Generate multiple choice or open-ended questions using OpenAI's advanced LLM API.
+- **Authentication**: Secure login using Google thanks to Next Auth.
+- **Database**: Powered by Prisma with PlanetScale cloud-based MySQL ensuring data reliability and scalability.
+- **UI Components**: Beautiful and responsive design using tailwind.css, lucide, and shadcn.
+- **User History**: Users can review their past quizzes and keep track of their progress.
+- **Word Cloud**: See trending subjects and discover what's popular among users.
+- **Statistics**: Get results instantly after a quiz, and deep dive into performance analytics.
+
+## Tech Stack
+
+- **Frontend**: Next.js 13.4, TailwindCSS, Lucide, Shadcn
+- **Backend**: Typescript, Prisma, OpenAI API, Next Auth, React Query
+- **Database**: PlanetScale (Cloud-based MySQL)
 
 ## Getting Started
 
-First, run the development server:
-
+1. **Clone the Repository**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone <repository_url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Dependencies**
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Setup Environment Variables**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Copy the \`.env.example\` to a new file named \`.env.local\` and fill in the required API keys and database credentials.
 
-## Learn More
+4. **Run Development Server**
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+The application should now be running on `http://localhost:3000/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+We welcome contributions! Please ensure to follow the coding standards and guidelines of the project. Pull requests will be reviewed by the maintainers.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is licensed under the MIT License. See `LICENSE` file for more details.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Feedback & Support
+
+For any queries, feedback or issues, please reach out to [ataserb@gmail.com](mailto:ataserb@gmail.com).
+
+Happy Quizzing! 🚀
